@@ -1,4 +1,4 @@
-import BigNumber from "bignumber.js";
+// import BigNumber from "bignumber.js";
 // id: '池子id',
 // name: '池子名字',  
 // token: '池子代币',
@@ -33,20 +33,20 @@ export const pools = [
     pastPricePerFullShare: 1
   },
   {
-    id: 'weth',
-    name: 'WETH',  
-    token: 'WETH',
-    tokenDescription: 'WETH',
-    tokenAddress: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2',
+    id: 'USDT',
+    name: 'USDT',  
+    token: 'USDT',
+    tokenDescription: 'USDT',
+    tokenAddress: '0xa71edc38d189767582c38a3145b5873052c3e47a',
     tokenDecimals: 18,
     itokenDecimals: 18,
     depostLimit:0,
     tokenDescriptionUrl: '',
     tokenDescriptionUrl2: '',
-    earnedToken: 'iWETH',
-    earnedTokenAddress: '0xa8EA49a9e242fFfBdECc4583551c3BcB111456E6',
-    earnContractAddress: '0xa8EA49a9e242fFfBdECc4583551c3BcB111456E6',
-    defaultApy: "39.54",
+    earnedToken: 'MDX',
+    earnedTokenAddress: '0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c',
+    earnContractAddress: '0x25d2e80cb6b86881fd7e07dd263fb79f4abe033c',
+    defaultApy: "10",
     pricePerFullShare: 1,
     pastPricePerFullShare: 1
   },
