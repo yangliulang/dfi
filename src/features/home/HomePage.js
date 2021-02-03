@@ -55,7 +55,7 @@ export default function HomePage() {
         color="success"
       />
       {/* <FarmPools fromPage='home'/> */}
-      <StakePage fromPage='home'/>
+      {/* <StakePage fromPage='home'/> */}
       <SectionPools fromPage='home'/>
       {/* <Dialog
         classes={{

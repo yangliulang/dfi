@@ -35,8 +35,9 @@ export function fetchPoolBalances(data) {
               contract: erc20Contract,
               address
             }).then(
+
               data => {
-                // console.log('data:' + data);
+                // console.log('data:--->' + data);
                 return callbackInner(null, data)
               }
             ).catch(

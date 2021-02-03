@@ -40,7 +40,7 @@ import {
   } from "assets/jss/material-kit-pro-react.js";
 const useStyles = makeStyles(styles);
 
-const footerLinkArr = [
+const footerLinkArr = [//-todo....
     {content:'Link.Contract',href:'https://etherscan.io/address/0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83'},
     // {content:'CoinMarketCap',href:'https://coinmarketcap.com/zh/currencies/yearn-finance-ii/'},
     // {content:'CoinGecko',href:'https://www.coingecko.com/en/coins/dfi-money'},
