@@ -39,10 +39,10 @@ export default function HeaderLinks(props) {
 
   const tabArr = [
     {value:'',label:t('Nav-Home')},
-    {value:'vault',label:t('Nav-Vault')},
-    {value:'stake',label:t('Nav-Stake')},
-    {value:'farm',label:t('Nav-Farm')},
-    {value:'liquidity',label:t('Nav-lp')},
+    // {value:'vault',label:t('Nav-Vault')},//-todo....
+    // {value:'stake',label:t('Nav-Stake')},
+    // {value:'farm',label:t('Nav-Farm')},
+    // {value:'liquidity',label:t('Nav-lp')},
   ]
 
   useEffect(() => {

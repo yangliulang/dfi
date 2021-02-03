@@ -69,7 +69,7 @@ export default function App({ children }) {
     <SnackbarProvider>
       <div className={classes.page}>
         <Header
-          brand="YFII"
+          brand="HECO"
           links={
             <HeaderLinks
               dropdownHoverColor="dark"
@@ -86,7 +86,7 @@ export default function App({ children }) {
               {Boolean(networkId === Number(process.env.NETWORK_ID)) && children}
               <Notifier />
             </div>
-          <FooterLinks />
+          {/* <FooterLinks /> */}
         </div>
       </div>
     </SnackbarProvider>
