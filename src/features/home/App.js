@@ -6,7 +6,7 @@ import { SnackbarProvider } from 'notistack';
 import { Notifier } from "features/common"
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import FooterLinks from 'components/Footer/FooterLinks.js'
+// import FooterLinks from 'components/Footer/FooterLinks.js'
 //  @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 //  hooks

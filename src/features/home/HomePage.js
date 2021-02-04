@@ -45,15 +45,15 @@ export default function HomePage() {
   return (
     <>
       {/* <LiquidityPage/> */}
-      <SnackbarContent
+      {/* <SnackbarContent
         message={
             <span onClick={() => window.open(t('Home-SnackBarUrl'))} style={{fontWeight: "bold"}}>
-              {t('Home-SnackBarText')}
+              {t('Home-SnackBarText')}fef
             </span>
         }
         close
         color="success"
-      />
+      /> */}
       {/* <FarmPools fromPage='home'/> */}
       {/* <StakePage fromPage='home'/> */}
       <SectionPools fromPage='home'/>

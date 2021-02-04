@@ -28,7 +28,7 @@ const useStyles = makeStyles(styles);
 </Tabs> */}
 
 export default function HeaderLinks(props) {
-  let history = useHistory();
+  const history = useHistory();
   const { dropdownHoverColor, connected, address, connectWallet, disconnectWallet } = props;
   const classes = useStyles();
   const { t, i18n } = useTranslation();
@@ -36,9 +36,9 @@ export default function HeaderLinks(props) {
   const [shortAddress, setShortAddress] = useState('');
   const [dataUrl, setDataUrl] = useState(null)
   const canvasRef = useRef(null)
-
+  // header link的问题
   const tabArr = [
-    {value:'',label:t('Nav-Home')},
+    // {value:'',label:t('Nav-Home')},
     // {value:'vault',label:t('Nav-Vault')},//-todo....
     // {value:'stake',label:t('Nav-Stake')},
     // {value:'farm',label:t('Nav-Farm')},
@@ -67,30 +67,30 @@ export default function HeaderLinks(props) {
         return '中文'
       case 'en':
         return 'English'
-      case 'ja':
-        return '日本語'
-      case 'th':
-        return 'ไทย'
-      case 'ko':
-        return '한글'
-      default:
-        return '中文'
+      // case 'ja':
+      //   return '日本語'
+      // case 'th':
+      //   return 'ไทย'
+      // case 'ko':
+      //   return '한글'
+      // default:
+      //   return '中文'
     }
   }
 
   const handleClick = event => {
-    console.log(event)
+    // console.log(event)
     switch(event) {
       case 'English':
         return i18n.changeLanguage('en').then(()=>setLanguage(event))
       case '中文':
         return i18n.changeLanguage('zh').then(()=>setLanguage(event))
-      case '日本語':
-        return i18n.changeLanguage('ja').then(()=>setLanguage(event))
-      case 'ไทย':
-        return i18n.changeLanguage('th').then(()=>setLanguage(event))
-      case '한글':
-        return i18n.changeLanguage('ko').then(()=>setLanguage(event))
+      // case '日本語':
+      //   return i18n.changeLanguage('ja').then(()=>setLanguage(event))
+      // case 'ไทย':
+      //   return i18n.changeLanguage('th').then(()=>setLanguage(event))
+      // case '한글':
+      //   return i18n.changeLanguage('ko').then(()=>setLanguage(event))
       default:
         return
     }
@@ -142,18 +142,18 @@ export default function HeaderLinks(props) {
           }}
           onClick={handleClick}
           dropdownList={[
-            "English",
             "中文",
-            "日本語",
-            "한글",
-            "ไทย",
-            { divider: true },
-            <a
-              href="https://github.com/yfii/vault/tree/master/src/locales"
-              target="_blank"
-            >
-              Help to translate
-            </a>
+            "English",
+            // "日本語",
+            // "한글",
+            // "ไทย",
+            // { divider: true },
+            // <a
+            //   href="https://github.com/yfii/vault/tree/master/src/locales"
+            //   target="_blank"
+            // >
+            //   Help to translate
+            // </a>
           ]}
         />
       </ListItem>
